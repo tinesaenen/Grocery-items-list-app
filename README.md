@@ -1,1 +1,1 @@
-# Grocery-items-list-app
+# Grocery-list-app
