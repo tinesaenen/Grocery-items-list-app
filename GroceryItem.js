@@ -10,7 +10,11 @@ export default class GroceryItem extends React.Component {
         <Text style={[styles.itemText, item.complete && styles.complete]}>
           {item.text}
         </Text>
-        <Switch value={item.complete} onValueChange={this.props.onToggleItem} />
+        <Switch
+          value={item.complete}
+          onTintColor="#FA7D7D"
+          onValueChange={this.props.onToggleItem}
+        />
       </View>
     );
   }
