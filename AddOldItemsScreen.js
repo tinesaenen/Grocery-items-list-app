@@ -5,8 +5,8 @@ import styles from "./Styles";
 export default class AddOldItemsScreen extends React.Component {
   render() {
     return (
-      <View style={styles.item}>
-        <Text>All my old items</Text>
+      <View style={{ flex: 1, alignItems: "center", paddingTop: 200 }}>
+        <Text>All Lists</Text>
       </View>
     );
   }

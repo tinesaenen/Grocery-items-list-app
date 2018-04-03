@@ -5,7 +5,7 @@ import styles from "./Styles";
 export default class AllListsScreen extends React.Component {
   render() {
     return (
-      <View style={styles.container}>
+      <View style={{ flex: 1, alignItems: "center", paddingTop: 200 }}>
         <Text>All Lists</Text>
       </View>
     );
