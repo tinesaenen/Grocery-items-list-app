@@ -60,6 +60,14 @@ const styles = StyleSheet.create({
     width: "100%",
     borderBottomColor: "#CECDCD",
     borderBottomWidth: 2
+  },
+
+  // tabNavigator
+
+  tabbarIcon: {
+    height: 26,
+    width: 26,
+    marginBottom: -5
   }
 });
 
