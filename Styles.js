@@ -62,12 +62,23 @@ const styles = StyleSheet.create({
     borderBottomWidth: 2
   },
 
-  // tabNavigator
+  // maintabNavigator
 
-  tabbarIcon: {
+  mainTabbarIcon: {
     height: 26,
     width: 26,
     marginBottom: -5
+  },
+
+  // tabNavigator my list old item
+  myListTabbarIcon: {
+    height: 45,
+    width: 80,
+    justifyContent: "flex-start"
+  },
+  oldItemTabbarIcon: {
+    height: 45,
+    width: 140
   }
 });
 

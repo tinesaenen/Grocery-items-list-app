@@ -40,10 +40,10 @@ export default class NewListScreen extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <View style={styles.newListButtonContainer}>
+        {/* <View style={styles.newListButtonContainer}>
           <ListButton title="my list" />
           <ListButton title="add old items" />
-        </View>
+        </View> */}
         <SpecialTextInput
           text={this.state.text}
           onChangeText={this.onChangeText.bind(this)}

@@ -5,11 +5,12 @@ import styles from "./Styles";
 
 import NewListScreen from "./NewListScreen";
 import AllListsScreen from "./AllListsScreen";
-import TestLinks from "./testlinks";
 import TestRechts from "./testrechts";
 
 export const newListIcon = require("./img/newListIcon2-02.png");
 export const allListsIcon = require("./img/allListsIcon-03.png");
+export const mylistButton = require("./img/MyListButton-04.png");
+export const addOldItemButton = require("./img/AddOldItemsButton-05.png");
 
 // export default TabNavigator
 const NewListOldItemNavigator = TabNavigator(
@@ -19,8 +20,8 @@ const NewListOldItemNavigator = TabNavigator(
       navigationOptions: {
         tabBarIcon: ({ tintColor }) => (
           <Image
-            style={[styles.tabbarIcon, { tintColor }]}
-            source={newListIcon}
+            style={[styles.myListTabbarIcon, { tintColor }]}
+            source={mylistButton}
           />
         )
       }
@@ -30,8 +31,8 @@ const NewListOldItemNavigator = TabNavigator(
       navigationOptions: {
         tabBarIcon: ({ tintColor }) => (
           <Image
-            style={[styles.tabbarIcon, { tintColor }]}
-            source={allListsIcon}
+            style={[styles.oldItemTabbarIcon, { tintColor }]}
+            source={addOldItemButton}
           />
         )
       }
@@ -41,17 +42,14 @@ const NewListOldItemNavigator = TabNavigator(
     tabBarPosition: "top",
     animationEnabled: true,
     swipeEnabled: true,
-
     tabBarOptions: {
-      showLabel: true,
+      showLabel: false,
       activeTintColor: "#FA7D7D",
       inactiveTintColor: "#CECDCD",
       style: {
         backgroundColor: "white",
-        paddingBottom: 2
-      },
-      labelStyle: {
-        fontSize: 10
+        height: 90,
+        paddingTop: 10
       }
     }
   }
@@ -64,7 +62,7 @@ const MainTabNavigator = TabNavigator(
       navigationOptions: {
         tabBarIcon: ({ tintColor }) => (
           <Image
-            style={[styles.tabbarIcon, { tintColor }]}
+            style={[styles.mainTabbarIcon, { tintColor }]}
             source={newListIcon}
           />
         )
@@ -75,7 +73,7 @@ const MainTabNavigator = TabNavigator(
       navigationOptions: {
         tabBarIcon: ({ tintColor }) => (
           <Image
-            style={[styles.tabbarIcon, { tintColor }]}
+            style={[styles.mainTabbarIcon, { tintColor }]}
             source={allListsIcon}
           />
         )
@@ -84,7 +82,6 @@ const MainTabNavigator = TabNavigator(
   },
   {
     tabBarPosition: "bottom",
-    animationEnabled: true,
     tabBarOptions: {
       showLabel: true,
       activeTintColor: "#FA7D7D",
