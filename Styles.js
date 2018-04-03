@@ -16,6 +16,11 @@ const styles = StyleSheet.create({
 
   //list item
 
+  listTitle: {
+    color: "#CECDCD",
+    fontSize: 30
+  },
+
   item: {
     alignItems: "flex-start",
     flexDirection: "row",
@@ -41,7 +46,7 @@ const styles = StyleSheet.create({
 
   itemInput: {
     fontSize: 30,
-    color: "#CECDCD",
+    color: "#FA7D7D",
     paddingBottom: 10,
     color: "#FA7D7D",
     flex: 1
@@ -49,7 +54,7 @@ const styles = StyleSheet.create({
   specialTextInputContainer: {
     flexDirection: "row",
     width: "100%",
-    borderBottomColor: "#CECDCD",
+    borderBottomColor: "#FA7D7D",
     borderBottomWidth: 2
   },
 

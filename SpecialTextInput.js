@@ -9,6 +9,7 @@ export default class SpecialTextInput extends React.Component {
         <TextInput
           style={styles.itemInput}
           placeholder="add item"
+          placeholderTextColor="#FA7D7D"
           returnKeyType="done"
           underlineColorAndroid="transparent"
           value={this.props.text}
