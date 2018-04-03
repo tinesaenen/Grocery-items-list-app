@@ -4,8 +4,7 @@ import { StyleSheet } from "react-native";
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    paddingHorizontal: 15,
-    paddingTop: 30
+    paddingHorizontal: 15
   },
 
   // new list screen
@@ -13,14 +12,6 @@ const styles = StyleSheet.create({
   buttonContainer: {
     flexDirection: "row",
     justifyContent: "space-between"
-  },
-
-  // new list button
-
-  newListButtonContainer: {
-    flexDirection: "row",
-    justifyContent: "space-between",
-    paddingBottom: 20
   },
 
   //list item
@@ -71,10 +62,9 @@ const styles = StyleSheet.create({
   },
 
   // tabNavigator my list old item
-  myListTabbarIcon: {
+  myNewListTabbarIcon: {
     height: 45,
-    width: 80,
-    justifyContent: "flex-start"
+    width: 140
   },
   oldItemTabbarIcon: {
     height: 45,

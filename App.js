@@ -5,11 +5,11 @@ import styles from "./Styles";
 
 import NewListScreen from "./NewListScreen";
 import AllListsScreen from "./AllListsScreen";
-import TestRechts from "./testrechts";
+import AddOldItemsScreen from "./AddOldItemsScreen";
 
 export const newListIcon = require("./img/newListIcon2-02.png");
 export const allListsIcon = require("./img/allListsIcon-03.png");
-export const mylistButton = require("./img/MyListButton-04.png");
+export const myNewListButton = require("./img/MyNewListButton-06.png");
 export const addOldItemButton = require("./img/AddOldItemsButton-05.png");
 
 // export default TabNavigator
@@ -20,14 +20,14 @@ const NewListOldItemNavigator = TabNavigator(
       navigationOptions: {
         tabBarIcon: ({ tintColor }) => (
           <Image
-            style={[styles.myListTabbarIcon, { tintColor }]}
-            source={mylistButton}
+            style={[styles.myNewListTabbarIcon, { tintColor }]}
+            source={myNewListButton}
           />
         )
       }
     },
     rechts: {
-      screen: TestRechts,
+      screen: AddOldItemsScreen,
       navigationOptions: {
         tabBarIcon: ({ tintColor }) => (
           <Image
@@ -42,6 +42,7 @@ const NewListOldItemNavigator = TabNavigator(
     tabBarPosition: "top",
     animationEnabled: true,
     swipeEnabled: true,
+
     tabBarOptions: {
       showLabel: false,
       activeTintColor: "#FA7D7D",
