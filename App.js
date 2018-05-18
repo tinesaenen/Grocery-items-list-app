@@ -1,18 +1,25 @@
 import React from "react";
 import { Text, View, FlatList, TextInput, Image } from "react-native";
-import { TabNavigator } from "react-navigation";
+import { TabNavigator, StackNavigator } from "react-navigation";
 import styles from "./Styles";
+import firebase from "firebase";
 
 import NewListScreen from "./NewListScreen";
 import AllListsScreen from "./AllListsScreen";
 import AddOldItemsScreen from "./AddOldItemsScreen";
+import LoginScreen from "./LoginScreen";
 
 export const newListIcon = require("./img/newListIcon2-02.png");
 export const allListsIcon = require("./img/allListsIcon-03.png");
 export const myNewListButton = require("./img/MyNewListButton-06.png");
 export const addOldItemButton = require("./img/AddOldItemsButton-05.png");
 
-// export default TabNavigator
+const AppNavigator = StackNavigator({
+  Login: { screen: LoginScreen },
+  AllTheListScreens: { screen: NewListScreen }
+});
+
+// top TabNavigator
 const NewListOldItemNavigator = TabNavigator(
   {
     links: {
@@ -56,6 +63,8 @@ const NewListOldItemNavigator = TabNavigator(
   }
 );
 
+// bottom main TabNavigator
+
 const MainTabNavigator = TabNavigator(
   {
     NewList: {
@@ -98,4 +107,21 @@ const MainTabNavigator = TabNavigator(
   }
 );
 
-export default MainTabNavigator;
+export default class App extends React.Component {
+  constructor(props) {
+    super(props);
+    // Initialize Firebase
+    const config = {
+      apiKey: "AIzaSyBlB2VVgL1Kz1-Z_KW8ank8EcUCaaExN_M",
+      authDomain: "ts-groceryapp.firebaseapp.com",
+      databaseURL: "https://ts-groceryapp.firebaseio.com",
+      projectId: "ts-groceryapp",
+      storageBucket: "ts-groceryapp.appspot.com",
+      messagingSenderId: "470402188338"
+    };
+    firebase.initializeApp(config);
+  }
+  render() {
+    return <MainTabNavigator />;
+  }
+}
