@@ -22,7 +22,7 @@ const AppNavigator = StackNavigator({
 // top TabNavigator
 const NewListOldItemNavigator = TabNavigator(
   {
-    links: {
+    NewList: {
       screen: NewListScreen,
       navigationOptions: {
         tabBarIcon: ({ tintColor }) => (
@@ -33,7 +33,7 @@ const NewListOldItemNavigator = TabNavigator(
         )
       }
     },
-    rechts: {
+    AddOldItems: {
       screen: AddOldItemsScreen,
       navigationOptions: {
         tabBarIcon: ({ tintColor }) => (
@@ -122,6 +122,6 @@ export default class App extends React.Component {
     firebase.initializeApp(config);
   }
   render() {
-    return <MainTabNavigator />;
+    return <AppNavigator />;
   }
 }
