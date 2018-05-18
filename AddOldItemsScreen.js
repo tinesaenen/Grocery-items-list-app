@@ -6,7 +6,7 @@ export default class AddOldItemsScreen extends React.Component {
   render() {
     return (
       <View style={{ flex: 1, alignItems: "center", paddingTop: 200 }}>
-        <Text>All Lists</Text>
+        <Text>All items I bought in the past</Text>
       </View>
     );
   }

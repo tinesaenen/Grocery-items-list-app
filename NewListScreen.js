@@ -7,16 +7,15 @@ import SpecialTextInput from "./SpecialTextInput";
 import GroceryItem from "./GroceryItem";
 import ListButton from "./ListButton";
 
-const items = [
+const INITIAL_ITEMS = [
   { key: 1507129580608, text: "broccoli", complete: false },
-  { key: 1507139597587, text: "appelsienen", complete: false },
-  { key: 1507129597589, text: "thee", complete: false }
+  { key: 1507139597587, text: "appelsienen", complete: false }
 ];
 
 export default class NewListScreen extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { items, text: "" };
+    this.state = { items: INITIAL_ITEMS, text: "" };
   }
 
   onChangeText(text) {
@@ -27,6 +26,7 @@ export default class NewListScreen extends React.Component {
     const newItem = { key: Date.now(), text: this.state.text, complete: false };
     const newItems = [...this.state.items, newItem];
     this.setState({ items: newItems, text: "" });
+    console.log(newItems);
   }
 
   onToggleItem(key, complete) {
@@ -66,7 +66,7 @@ export default class NewListScreen extends React.Component {
         />
         <FlatList
           style={styles.itemList}
-          data={items}
+          data={this.state.items}
           renderItem={this.renderItem.bind(this)}
         />
       </View>

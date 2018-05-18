@@ -6,8 +6,9 @@ export default class AllListsScreen extends React.Component {
   render() {
     return (
       <View style={{ flex: 1, alignItems: "center", paddingTop: 200 }}>
-        <Text>All Lists</Text>
+        <Text>All grocery lists I saved in the past</Text>
       </View>
     );
   }
 }
+ 

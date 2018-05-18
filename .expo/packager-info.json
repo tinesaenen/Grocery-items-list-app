@@ -1,8 +1,8 @@
 {
   "expoServerPort": 19000,
-  "packagerPort": 19003,
-  "packagerPid": 31658,
-  "expoServerNgrokUrl": "https://m9-tv9.tinesaenen.grocery-items-list-app.exp.direct",
-  "packagerNgrokUrl": "https://packager.m9-tv9.tinesaenen.grocery-items-list-app.exp.direct",
-  "ngrokPid": 31678
+  "packagerPort": 19001,
+  "packagerPid": 2638,
+  "expoServerNgrokUrl": "https://kx-ad7.tinesaenen.grocery-items-list-app.exp.direct",
+  "packagerNgrokUrl": "https://packager.kx-ad7.tinesaenen.grocery-items-list-app.exp.direct",
+  "ngrokPid": 2710
 }
