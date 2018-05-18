@@ -56,7 +56,7 @@ export default class LoginScreen extends React.Component {
         <Text style={styles.formLabel}>Email</Text>
         <TextInput
           style={styles.formInput}
-          placeholder="freshnote@gmail.com"
+          placeholder="grocery@gmail.com"
           keyboardType="email-address"
           autoCapitalize="none"
           autoCorrect={false}
@@ -88,3 +88,26 @@ export default class LoginScreen extends React.Component {
     }
   }
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: "#f7f7f7"
+  },
+  formLabel: {
+    fontWeight: "bold",
+    marginRight: 10,
+    marginLeft: 10,
+    marginTop: 20
+  },
+  formInput: {
+    padding: 10,
+    borderWidth: 1,
+    borderColor: "#ccc",
+    margin: 10
+  },
+  formError: {
+    textAlign: "center",
+    color: "red"
+  }
+});
