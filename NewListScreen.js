@@ -40,25 +40,6 @@ export default class NewListScreen extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <View
-          style={{
-            justifyContent: "flex-end",
-            flexDirection: "row"
-          }}
-        >
-          <TextInput
-            style={styles.listTitle}
-            placeholderTextColor="#CECDCD"
-            placeholder={
-              new Date().getDate() +
-              "/" +
-              (new Date().getMonth() + 1) +
-              "/" +
-              new Date().getFullYear()
-            }
-            editable={true}
-          />
-        </View>
         <SpecialTextInput
           text={this.state.text}
           onChangeText={this.onChangeText.bind(this)}
