@@ -1,9 +1,9 @@
 {
   "expo": {
-    "name": "grocery-list",
+    "name": "My Groceries",
     "description": "This project is really great.",
     "slug": "grocery-list",
-    "privacy": "public",
+    "privacy": "unlisted",
     "sdkVersion": "26.0.0",
     "platforms": ["ios", "android"],
     "version": "1.0.0",
@@ -17,9 +17,7 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true
     }
