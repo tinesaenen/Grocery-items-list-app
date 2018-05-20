@@ -14,12 +14,7 @@ export const allListsIcon = require("./img/allListsIcon-03.png");
 export const myNewListButton = require("./img/MyNewListButton-06.png");
 export const addOldItemButton = require("./img/AddOldItemsButton-05.png");
 
-const AppNavigator = StackNavigator({
-  Login: { screen: LoginScreen },
-  AllTheListScreens: { screen: NewListScreen }
-});
-
-// top TabNavigator
+// top TabNavigator my new list/add old item
 const NewListOldItemNavigator = TabNavigator(
   {
     NewList: {
@@ -49,7 +44,6 @@ const NewListOldItemNavigator = TabNavigator(
     tabBarPosition: "top",
     animationEnabled: true,
     swipeEnabled: true,
-
     tabBarOptions: {
       showLabel: false,
       activeTintColor: "#FA7D7D",
@@ -64,7 +58,6 @@ const NewListOldItemNavigator = TabNavigator(
 );
 
 // bottom main TabNavigator
-
 const MainTabNavigator = TabNavigator(
   {
     NewList: {
@@ -92,6 +85,7 @@ const MainTabNavigator = TabNavigator(
   },
   {
     tabBarPosition: "bottom",
+    animationEnabled: true,
     tabBarOptions: {
       showLabel: true,
       activeTintColor: "#FA7D7D",
@@ -104,6 +98,17 @@ const MainTabNavigator = TabNavigator(
         fontSize: 10
       }
     }
+  }
+);
+
+const AppNavigator = StackNavigator(
+  {
+    Login: { screen: LoginScreen },
+    AllTheListScreens: { screen: MainTabNavigator }
+  },
+  {
+    headerMode: "none",
+    mode: "card"
   }
 );
 
