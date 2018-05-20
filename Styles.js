@@ -37,7 +37,8 @@ const styles = StyleSheet.create({
   },
   complete: {
     textDecorationLine: "line-through",
-    textDecorationColor: "#FA7D7D"
+    textDecorationColor: "#FA7D7D",
+    color: "#CECDCD"
   },
   itemList: {
     width: "100%"

@@ -8,8 +8,8 @@ import GroceryItem from "./GroceryItem";
 import ListButton from "./ListButton";
 
 const INITIAL_ITEMS = [
-  { key: 1507129580608, text: "broccoli", complete: false },
-  { key: 1507139597587, text: "appelsienen", complete: false }
+  { key: 1507129580608, text: "Kiwi", complete: false },
+  { key: 1507139597587, text: "Water", complete: false }
 ];
 
 export default class NewListScreen extends React.Component {
