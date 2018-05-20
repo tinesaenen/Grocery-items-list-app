@@ -18,7 +18,7 @@ export default class LoginScreen extends React.Component {
   componentDidMount() {
     firebase.auth().onAuthStateChanged(user => {
       if (user) {
-        this.props.navigation.navigate("NoteList");
+        this.props.navigation.navigate("AllTheListScreens");
       }
     });
   }
@@ -92,7 +92,7 @@ export default class LoginScreen extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#f7f7f7"
+    backgroundColor: "white"
   },
   formLabel: {
     fontWeight: "bold",
