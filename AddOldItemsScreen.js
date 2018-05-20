@@ -5,7 +5,14 @@ import styles from "./Styles";
 export default class AddOldItemsScreen extends React.Component {
   render() {
     return (
-      <View style={{ flex: 1, alignItems: "center", paddingTop: 200 }}>
+      <View
+        style={{
+          flex: 1,
+          alignItems: "center",
+          paddingTop: 200,
+          backgroundColor: "white"
+        }}
+      >
         <Text>All items I bought in the past</Text>
       </View>
     );
